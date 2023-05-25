@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/product-slide.css">
+
+    <link rel="stylesheet" href="./css/drawer.css">
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +24,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
 
     <title>Teste de HTML e CSS</title>
 </head>
@@ -57,9 +60,10 @@
 
                     <div class="icons">
                         <img src="./assets/images/icon-user.svg" alt="Icone do usuário">
-                        <img src="./assets/images/icon-bag.svg" alt="Icone de bolsa">
+                        <img class="js-menu__open" data-menu="#main-nav" src="./assets/images/icon-bag.svg"
+                            alt="Icone de bolsa">
 
-                        <div>
+                        <div class="js-menu__open" data-menu="#main-nav">
                             <img src="./assets/images/icon-99.svg" alt="Icone do 99">
                         </div>
                     </div>
@@ -81,232 +85,32 @@
             </div>
         </section>
 
-        <section class="product-slide">
-            <h2 class="product-category">best selling</h2>
-            <div class="product-container">
-                <button class="previous-btn" id="prev-btn"><img src="./assets/images/arrow-left.svg" alt=""></button>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./assets/images/product.png" class="product-thumb" alt="">
+        <section class="products">
+            <div class="swiper sample-slider">
+                <div class="swiper-navigation">
+                    <div class="swiper-button-prev-unique">
+                        <img src="./assets/images/arrow-left.svg" alt="">
                     </div>
-                    <div class="product-info">
-                        <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                    </div>
-                    <div class="prices">
-                        <p class="price-discount">R$1598,00</p>
-                        <p class="price">R$2000,00</p>
+                    <div class="swiper-button-next-unique">
+                        <img src="./assets/images/arrow-right.svg" alt="">
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./assets/images/product.png" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <p class="price-discount">R$1598,00</p>
-                        <p class="price">R$2000,00</p>
-                    </div>
+                <div class="swiper-wrapper"></div>
+            </div>
+        </section>
+
+        <section class="drawer">
+            <div class="js-menu__context">
+                <div id="main-nav" class="js-menu js-menu--right">
+                    <span class="js-menu__close">✕</span>
+                    <p>You have no items in your cart.</p>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./assets/images/product.png" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <p class="price-discount">R$1598,00</p>
-                        <p class="price">R$2000,00</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./assets/images/product-sold-out.png" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <p class="price-discount">R$1598,00</p>
-                        <p class="price">R$2000,00</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./assets/images/product.png" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <p class="price-discount">R$1598,00</p>
-                        <p class="price">R$2000,00</p>
-                    </div>
-                </div>
-                <button class="next-btn" id="nxt-btn"><img src="./assets/images/arrow-right.svg" alt=""></button>
             </div>
         </section>
     </main>
 
+    <script src="./js/drawer.js"></script>
 
-    <div class="product-card">
-        <div class="product-image" style="background-image: url(./assets/images/product-sold-out.png);">
-
-
-        </div>
-        <div class="product-info">
-            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-            <p class="product-short-description">a short line about the cloth..</p>
-            <p class="price-discount">R$1598,00</p>
-            <p class="price">R$2000,00</p>
-        </div>
-    </div>
-
-    <section class="products2">
-        <!-- Slider main container -->
-        <div class="swiper sample-slider">
-            <div class="swiper-navigation">
-                <div class="swiper-button-prev-unique">roi</div>
-                <div class="swiper-button-next-unique">roi</div>
-            </div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product-sold-out.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="./assets/images/product.png" class="product-thumb" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-Lorem ipsum">Lorem ipsum</h2>
-                            <p class="product-short-description">a short line about the cloth..</p>
-                            <p class="price-discount">R$1598,00</p>
-                            <p class="price">R$2000,00</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <script>
-            const swiper = new Swiper('.sample-slider', {
-                loop: true,
-                centeredSlides: true,              //added
-                breakpoints: {
-                    1181: {
-                        slidesPerView: 4
-                    },
-                    1180: {
-                        slidesPerView: 3
-                    },
-                    1020: {
-                        slidesPerView: 2
-                    },
-                    700: {
-                        slidesPerView: 1
-                    }
-                },
-
-                spaceBetween: 30,
-                watchSlidesVisibility: true,
-                spaceBetween: 20,               //added
-
-                autoplay: {
-                    delay: 2000,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-unique',
-                    prevEl: '.swiper-button-prev-unique'
-                },
-            })
-        </script>
 </body>
 
 </html>

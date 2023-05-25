@@ -104,3 +104,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+.swiper-navigation div {
+    cursor: pointer;
+}
