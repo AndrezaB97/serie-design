@@ -1,52 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 html {
-    --black: #141414;
-    --white: #FFFFFF;
-    --light-gray: #cccccc
+  --black: #141414;
+  --white: #ffffff;
+  --light-gray: #cccccc;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .container {
-    max-width: 1170px;
-    height: 20px;
+  max-width: 1170px;
+  height: 20px;
 }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+main > section:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-section > div:nth-child(1) {
-    background-image: url(../assets/images/section-left-img.png);
-    height: 512px;
-    width: 101%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+main > section:nth-child(2) > div:nth-child(1) {
+  background-image: url(../assets/images/section-left-img.png);
+  height: 512px;
+  width: 101%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+main > section:nth-child(2) > div:nth-child(2) {
+  background-image: url(../assets/images/section-right-img.png);
+  height: 512px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+
+.swiper-arrows {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    justify-content: space-between;
 }
 
-section > div:nth-child(2) {
-    background-image: url(../assets/images/section-right-img.png);
-    height: 512px;
+
+.swiper-container {            
+    margin-left: auto;
+    margin-right: auto
+}
+
+.swiper {
+    height: 800px;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    
 }
