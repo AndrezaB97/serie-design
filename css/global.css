@@ -350,3 +350,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.swiper-button-prev-unique {
+  padding-left: 130px;
+}
+
+.swiper-button-next-unique {
+  padding-right: 130px;
+}
