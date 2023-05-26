@@ -358,3 +358,19 @@ main {
 .swiper-button-next-unique {
   padding-right: 130px;
 }
+
+.fixed-nav {
+  overflow: hidden;
+  background-color: #000!important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.unfixed-nav {
+  overflow: auto;
+  background-color: transparent;
+  position: relative;
+  width: auto;
+}

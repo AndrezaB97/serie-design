@@ -452,6 +452,19 @@
         });
     </script>
 
+    <script>
+        $(window).bind('mousewheel', function (event) {
+            if (event.originalEvent.wheelDelta >= 0) {
+                $('#nav-header').addClass('unfixed-nav');
+                $('#nav-header').removeClass('fixed-nav');
+            }
+            else {
+                $('#nav-header').removeClass('unfixed-nav');
+                $('#nav-header').addClass('fixed-nav');
+            }
+        });
+    </script>
+
 </body>
 
 </html>
