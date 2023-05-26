@@ -47,8 +47,8 @@ $(document).ready(function () {
       1020: {
         slidesPerView: 3,
       },
-      700: {
-        slidesPerView: 1,
+      768: {
+        slidesPerView: 2,
       },
     },
 

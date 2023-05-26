@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/product-slide.css">
-
     <link rel="stylesheet" href="./css/drawer.css">
+    <link rel="stylesheet" href="./css/layouts.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/menu.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,13 +41,42 @@
 
 <body>
     <main>
-        <header>
+        <div class="mobile-menu">
             <div>
+                <img src="./assets/images/hamburger.svg" alt="">
+            </div>
+
+            <div class="mobile-menu-items">
+                <nav class="mobile-links">
+                    <div>
+                        <a class="hover-underline-animation" href="https://www.google.com">Shop</a>
+                    </div>
+
+                    <div>
+                        <a class="hover-underline-animation" href="https://www.google.com">Lançamentos</a>
+                    </div>
+
+                    <div>
+                        <a class="hover-underline-animation" href="https://www.google.com">Born In Chaos</a>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="./assets/images/icon-search.svg" alt="Lupa">
+                            <input type="text" name="search" id="input-search" placeholder="BUSCAR PRODUTO" />
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <header>
+            <div id="title-header">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div>
-                <img src="./assets/images/logo-seri.e.svg" alt="Icone da empresa">
 
+            <div id="nav-header">
+                <img src="./assets/images/logo-seri.e.svg" alt="Icone da empresa">
                 <nav>
                     <div>
                         <a class="hover-underline-animation" href="https://www.google.com">Shop</a>
@@ -58,6 +89,8 @@
                     <div>
                         <a class="hover-underline-animation" href="https://www.google.com">Born In Chaos</a>
                     </div>
+
+                    
                 </nav>
 
                 <div>
@@ -78,18 +111,134 @@
                 </div>
 
             </div>
+            <div class="disabled" id="menu-item2">
+                <div>
+                    <div>
+                        <img src="./assets/images/image1.jpg" alt="">
+                        <p class="text-card2">COLEÇÃO VERÃO</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/image2.jpg" alt="">
+                        <p class="text-card2">COLEÇÃO COPA</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/image3.jpg" alt="">
+                        <p class="text-card2">COLEÇAO glowshine</p>
+                    </div>                
+
+                    <div></div>
+                    <div>
+                        <button>TODAS AS COLEÇÕES<img src="./assets/images/arrow-right-menu-item.svg" alt=""></button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item disabled" id="menu-item">
+                <div>
+                    <img src="./assets/images/menu-img1.jpg" alt="">
+                </div>
+        
+                <div>
+                    <img src="./assets/images/menu-img2.jpg" alt="">
+                </div>
+        
+                <div>
+                    <img src="./assets/images/menu-img3.jpg" alt="">
+                </div>
+        
+                <div>
+                    <div> - VOLTAR</div>
+        
+                    <div>
+                        <div>VESTUÁRIO</div>
+        
+                        <div>
+                            <div class="column-items">
+                                <p>CAMISETAS</p>
+                                <p>CALÇAS</p>
+                                <p>MOLETONS</p>
+                                <p>CROPPED</p>
+                                <p>SHORTS</p>
+                                <p>JAQUETAS</p>
+                            </div>
+                            <div class="column-items">
+                                <p>CAMISETAS</p>
+                                <p>CALÇAS</p>
+                                <p>MOLETONS</p>
+                                <p>CROPPED</p>
+                                <p>SHORTS</p>
+                                <p>JAQUETAS</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div>ACESSÓRIOS</div>
+        
+                        <div>
+                            <div class="column-items">
+                                <p>CAMISETAS</p>
+                                <p>CALÇAS</p>
+                                <p>MOLETONS</p>
+                                <p>CROPPED</p>
+                                <p>SHORTS</p>
+                                <p>JAQUETAS</p>
+                            </div>
+                            <div class="column-items">
+                                <p>CAMISETAS</p>
+                                <p>CALÇAS</p>
+                                <p>MOLETONS</p>
+                                <p>CROPPED</p>
+                                <p>SHORTS</p>
+                                <p>JAQUETAS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        todas as categorias<img src="./assets/images/arrow-right-text.svg" alt="">
+                    </div>
+                </div>
+        
+              
+            </div>
+
+            <div id="text-header">
+                <div>
+
+                    <div class="title-card">LOREM IPSUM DOLOR</div>
+
+                    <div class="subtitle-card">
+                        ACESSAR JÁ
+
+                        <img src="./assets/images/arrow-right-text.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
         </header>
+
+        
 
         <section>
             <div>
-                <div>LOREM IPSUM DOLOR</div>
+                <div class="title-card">LOREM IPSUM DOLOR</div>
 
-                <div>Acessar já -></div>
+                <div class="subtitle-card">
+                    ACESSAR JÁ
+
+                    <img src="./assets/images/arrow-right-text.svg" alt="">
+                </div>
             </div>
             <div>
-                <div>LOREM IPSUM DOLOR</div>
+                <div class="title-card">LOREM IPSUM DOLOR</div>
 
-                <div>Acessar já -></div>
+                <div class="subtitle-card">
+                    ACESSAR JÁ
+
+                    <img src="./assets/images/arrow-right-text.svg" alt="">
+                </div>
             </div>
         </section>
 
@@ -113,9 +262,52 @@
 
         <section class="drawer">
             <div class="js-menu__context">
+
                 <div id="main-nav" class="js-menu js-menu--right">
-                    <span class="js-menu__close">✕</span>
-                    <p>You have no items in your cart.</p>
+                    <div class="cart-header">
+                        <div>
+                            <img src="./assets/images/icon-bag.svg" alt="Icone de bolsa">
+                            <div>Sua sacola</div>
+                        </div>
+
+                        <div>
+                            <span class="js-menu__close">✕</span>
+                        </div>
+                    </div>
+
+                    <div class="drawer-content">
+                        <div>
+                            <img src="./assets/images/card-product-cart.png" alt="">
+
+                            <div>
+                                <div>
+                                    <div class="title">Lorem Ipsum</div>
+
+                                    <div class="quantity">Quantidade: 1</div>
+                                </div>
+
+                                <div>
+                                    <div class="price">R$ 1.598,00</div>
+                                    <img src="./assets/images/icon-trash.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="payment">
+                        <div>
+                            <div>Total A Pagar</div>
+                            <div>R$ 300,00</div>
+                        </div>
+
+                        <div>
+                            <button>Comprar</button>
+                            <div>Continuar Comprando</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,9 +331,9 @@
         </section>
 
         <section class="banner">
-            <div>LOREM IPSUM DOLOR</div>
+            <div class="title-card">LOREM IPSUM DOLOR</div>
 
-            <div>
+            <div class="subtitle-card">
                 ACESSAR JÁ
 
                 <img src="./assets/images/arrow-right-text.svg" alt="">
@@ -219,6 +411,44 @@
     </footer>
 
     <script src="./js/drawer.js"></script>
+
+    <script>
+        $(document).on('click', 'body > main > div > div:nth-child(1) > img', function () {
+            if ($('.mobile-menu-items').hasClass('activated')) {
+                $('.mobile-menu-items').removeClass('activated');
+                $('.mobile-menu-items').addClass('disabled');
+            } else {
+                $('.mobile-menu-items').removeClass('disabled');
+                $('.mobile-menu-items').addClass('activated');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).on('click', 'header > div:nth-child(2) > nav > div:nth-child(1) > a', function(event) {
+            event.preventDefault();
+            if ($('#menu-item').hasClass('activated-menu-item')) {
+                $('#menu-item').removeClass('activated-menu-item');
+                $('#menu-item').addClass('disabled');
+            } else {
+                $('#menu-item').removeClass('disabled');
+                $('#menu-item').addClass('activated-menu-item');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '#nav-header > nav > div:nth-child(2) > a', function(event) {
+            event.preventDefault();
+            if ($('#menu-item2').hasClass('activated-menu-item')) {
+                $('#menu-item2').removeClass('activated-menu-item');
+                $('#menu-item2').addClass('disabled');
+            } else {
+                $('#menu-item2').removeClass('disabled');
+                $('#menu-item2').addClass('activated-menu-item');
+            }
+        });
+    </script>
 
 </body>
 
