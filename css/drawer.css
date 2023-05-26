@@ -32,12 +32,14 @@
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
+
 .js-menu--right {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   position: absolute;
   right: 0;
 }
+
 .js-menu__open {
   cursor: pointer;
 }
