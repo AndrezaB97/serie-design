@@ -420,3 +420,8 @@ body > main > header > div:nth-child(4) {
   text-transform: uppercase;
   color: #000000;
 }
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
