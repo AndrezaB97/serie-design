@@ -1,46 +1,79 @@
-@media only screen and (min-width : 768px) {
-    header {
-        height: 400px;
-    }
+@media only screen and (min-width: 768px) {
+  header {
+    height: 400px;
+  }
 
-    main > section:nth-child(2) {
-        grid-template-columns: 1fr;
-    }
+  main > section:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media only screen and (min-width : 520px)  {
-    header {
-        display: none;
-    }
+@media only screen and (min-width: 100px) and (max-width: 450px) {
+  #nav-header,
+  #title-header,
+  header {
+    display: none !important;
+  }
 
-    .mobile-menu {
-        display: flex;
-    }
+  .mobile-menu {
+    background-position: center;
+  }
 
-    main > section:nth-child(2) {
-        grid-template-columns: 1fr;
-    }
+  body > main > section.newsletter > div {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    height: 200px;
+  }
+
+  body > main > section.newsletter > div > div:nth-child(2) {
+    display: flex !important;
+    justify-content: center;
+    padding-left: 40px;
+  }
+
+  body > footer > div.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
 }
 
-@media only screen and (min-width : 1024px) {
-    header {
-        display: block!important;
-        height: 100vh;
-    }
+@media only screen and (min-width: 520px) {
+  header {
+    display: none;
+  }
 
-    main > section:nth-child(3) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .mobile-menu {
+    display: flex;
+  }
 
-    main > section:nth-child(2) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .mobile-menu {
-        display: none;
-    }
+  main > section:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
 }
 
+@media only screen and (min-width: 1024px) {
+  header {
+    display: block !important;
+    height: 100vh;
+  }
 
+  main > section:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}

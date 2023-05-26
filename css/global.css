@@ -243,48 +243,6 @@ main > section:nth-child(3) > div:nth-child(2) {
   padding: 34px;
 }
 
-.title-footer {
-  font-family: "Arimo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 92.4%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 20px;
-}
-
-.subtitle-footer {
-  font-family: "Arimo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.16em;
-}
-
-footer > div:nth-child(2) {
-  height: 48px;
-  background-color: #000000;
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  padding-left: 19px;
-  padding-right: 19px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.text-footer {
-  font-family: "Arimo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--white);
-}
-
 #text-header {
   height: 73%;
   display: flex;
@@ -422,6 +380,30 @@ body > main > header > div:nth-child(4) {
 }
 
 .swiper-slide {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#text-header > div > div.title-card {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.48em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+#menu-item2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }

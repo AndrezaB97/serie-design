@@ -16,8 +16,8 @@
 }
 
 .product-card {
-    width: 338px;
-    height: 598px;
+  width: 338px;
+  height: 598px;
   margin-right: 6px;
 }
 
@@ -101,10 +101,10 @@
 }
 
 .swiper-navigation {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .swiper-navigation div {
-    cursor: pointer;
+  cursor: pointer;
 }
