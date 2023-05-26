@@ -29,7 +29,7 @@ main > section:nth-child(2) {
 main > section:nth-child(3) > div:nth-child(1) {
   background-image: url(../assets/images/section-left-img.png);
   height: 512px;
-  width: 100%;
+  width: 101%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -406,4 +406,41 @@ main {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+#menu-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 6px;
+  padding: 5px;
+  width: 63%;
+}
+
+#menu-item > div:nth-child(4) > div:nth-child(2) {
+    text-align: left;
+}
+
+#menu-item > div:nth-child(4) {
+  padding: 10px;
+}
+
+.column-items {
+  padding-right: 5px;
+}
+
+#menu-item > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) {
+  text-align: left;
+}
+
+#nav-header > div > div.icons > div > img {
+  width: 15px;
+}
+
+#nav-header > div > div.icons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
